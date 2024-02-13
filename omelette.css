@@ -1,0 +1,169 @@
+{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+:root{
+--nutmeg:hsl(14,45%,36%);
+--dark-raspberry:hsl(332,51%,32%);
+--white:hsl(0,0%,100%);
+--rose-white:hsl(330,100%,98%);
+--eggshell:hsl(30,54%,90%);
+--light-grey:hsl(30,18%.87);
+--wenge-brown:hsl(30,10%,34%);
+--dark-charcoal:hsl(24,5%,18% );
+
+
+}
+
+body
+{
+background-color: var(--eggshell);
+color:var(--wenge-brown);
+min-height: :100vh;
+font-family: 'Outfit',sans-serif;
+display: grid;
+place-content: center;
+}
+
+img
+{
+	max-width: 100%;
+	display: block;
+}
+
+@font-face {
+    font-family: 'Young-serif';
+    src: local('Young-serif'), url(" C:\Users\USER\Downloads\recipe-page-main\recipe-page-main\assets\fonts\young-serif") format('regular');
+    /* Add additional formats if needed */
+}
+
+h1, h2 {
+    font-style: 'Young-Serif';
+    /* Use 'YourLocalFont' for h1 and h2, fallback to sans-serif if not available */
+}
+
+
+
+h1{
+	color:var(--dark-charcoal);
+	font-size: 2.8rem;
+}
+
+
+
+h2{
+
+	color: var(--nutmeg);
+	margin-bottom: 1rem;
+}
+
+
+.recipe-step{
+ margin:1rem 0;}
+}
+
+.nutrition-step{
+
+	margin:-top 1rem;
+}
+
+ul{
+	padding-left: 1.25rem;
+}
+
+ul li::marker{
+	color: var(--nutmeg);
+	font-weight: bold;
+}
+
+ul li span{
+color: var(--wenge-brown);
+margin-left: 1rem;
+font-weight: 700;
+}
+
+.container{
+
+max-width: 800px;
+background-color: var(--white);
+margin: 2rem;
+border-radius: 1rem;
+}
+
+
+.container.receipe-img{
+
+	padding: 2rem;
+	border-radius: 1rem;
+	overflow: hidden;
+}
+
+.container.receipe-img img{
+
+	border-radius: 1rem;
+
+}
+
+.recipe-information{
+
+	padding: 0rem 2rem 2rem 2rem;
+}
+
+.description{
+
+	margin: 1.5rem 0;
+}
+
+
+.recipe-prep-time{
+	background-color: var(--rose-white);
+	padding: 1.25rem;
+	border-radius: 1rem;
+}
+
+
+.recipe-prep-time h3{
+
+	color: var(--dark-raspberry);
+	margin-bottom: .75rem;
+}
+
+
+.recipe-prep-time ul li:marker
+{
+	color: var(--dark-raspberry);
+}
+
+.ingredients li{
+
+	margin-bottom:.5rem;
+}
+
+
+
+.ingredients{
+
+	font-weight: initial;
+}
+
+.instructions.item{
+
+	padding-left: .5rem;
+	margin-bottom: .5rem;
+	display: flex;
+}
+
+.instructions.item.num{
+
+color: var(--nutmeg);
+margin-right :1rem ;
+font-weight: 700; 
+}
+
+.instructions.item p span{
+
+	font-weight: 700;
+}
+
